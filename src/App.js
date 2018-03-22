@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import TabsInterface from './TabsInterface';
-import Background from './Background';
-
-const API = 'http://localhost:3000/api/v1/';
-const DEFAULT_QUERY = 'pokemons';
+import APIInterface from './APIInterface';
 
 
 class App extends Component {
@@ -30,14 +27,13 @@ class App extends Component {
               </p>
           </header>
 
-            <TabsInterface />
+            <APIInterface />
 
-            {/*<Background />*/}
+            {/*<TabsInterface />*/}
+
 
         </div>
       );
     }
 }
-
-
 export default App;
